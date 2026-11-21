@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf0f9;
+}
+
+/* Header */
+
+header {
+    background: #142f55;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+header h2 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+header p {
+    font-size: 13px;
+    color: #d5e3f7;
+}
+
+/* Main Container */
+
+.container {
+    width: 485px;
+    max-width: calc(100% - 30px);
+    margin: 28px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 13px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+}
+
+.welcome {
+    text-align: center;
+    color: #142f55;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Navigation */
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    background: #1970b3;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #142f55;
+}
+
+/* All Sections */
+
+.section {
+    display: none;
+    background: #f3f7fc;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.section h3 {
+    text-align: center;
+    color: #1769aa;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+
+.section input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #d5dce7;
+    border-radius: 7px;
+    outline: none;
+}
+
+.section input:focus {
+    border-color: #1970b3;
+}
+
+/* Section Buttons */
+
+.section button {
+    width: 100%;
+    padding: 12px;
+}
+
+/* Account Details */
+
+#balanceDetails {
+    background: white;
+    padding: 16px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+}
+
+#balanceDetails h3 {
+    margin-bottom: 15px;
+}
+
+#balanceDetails h2 {
+    color: #008744;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 500px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .navigation {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.transaction-result {
+    background: white;
+    padding: 18px;
+    margin-top: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+    color: #142f55;
+    line-height: 1.8;
+}
+
+.transaction-result h3 {
+    color: #008744;
+    text-align: center;
+}
+
+.transaction-result .new-balance {
+    color: #008744;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}

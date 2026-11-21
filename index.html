@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bhushan Bank of India</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>BHUSHAN BANK OF INDIA</h2>
+        <p>Your Money, Our Responsibility</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h2 class="welcome">Welcome to Bhushan Bank</h2>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+
+            <button onclick="showSection('create')">
+                1. Create Account
+            </button>
+
+            <button onclick="showSection('login')">
+                2. Login
+            </button>
+
+            <button onclick="showSection('deposit')">
+                3. Deposit Money
+            </button>
+
+            <button onclick="showSection('withdraw')">
+                4. Withdraw Money
+            </button>
+
+            <button onclick="showSection('transfer')">
+                5. Transfer Money
+            </button>
+
+            <button onclick="showSection('balance')">
+                6. Check Balance
+            </button>
+
+        </div>
+
+
+        <!-- CREATE ACCOUNT -->
+
+        <div id="create" class="section">
+
+            <h3>Create Account</h3>
+
+            <input type="text" placeholder="Enter Full Name">
+
+            <input type="text" placeholder="Father's Name">
+
+            <input type="text" placeholder="Gender">
+
+            <input type="date">
+
+            <input type="text" placeholder="Mobile Number">
+
+            <input type="password" placeholder="Create Password">
+
+            <button onclick="createAccount()">
+                Create Account
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <div id="login" class="section">
+
+            <h3>Login</h3>
+
+            <input type="text" placeholder="Enter Account Number">
+
+            <input type="password" placeholder="Enter Password">
+
+            <button onclick="login()">
+                Login
+            </button>
+
+        </div>
+
+
+        <!-- DEPOSIT -->
+
+        <div id="deposit" class="section">
+
+            <h3>Deposit Money</h3>
+
+            <input type="number" placeholder="Enter Amount">
+
+            <button onclick="depositMoney()">
+                Deposit Money
+            </button>
+            <div id="depositResult"></div>
+
+        </div>
+
+
+        <!-- WITHDRAW -->
+
+        <div id="withdraw" class="section">
+
+            <h3>Withdraw Money</h3>
+
+            <input type="number" placeholder="Enter Amount">
+
+            <button onclick="withdrawMoney()">
+                Withdraw Money
+            </button>
+            <div id="withdrawResult"></div>
+
+        </div>
+
+
+        <!-- TRANSFER -->
+
+        <div id="transfer" class="section">
+
+            <h3>Transfer Money</h3>
+
+            <input type="text" placeholder="Receiver Account Number">
+
+            <input type="number" placeholder="Enter Amount">
+
+            <button onclick="transferMoney()">
+                Transfer Money
+            </button>
+            <div id="transferResult"></div>
+
+        </div>
+
+
+        <!-- CHECK BALANCE -->
+
+        <div id="balance" class="section">
+
+            <h3>Check Balance</h3>
+
+            <button onclick="checkBalance()">
+                Check Balance
+            </button>
+
+            <div id="balanceDetails"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
